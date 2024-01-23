@@ -1,0 +1,17 @@
+a{
+  text-decoration: none;
+}
+
+img{
+  text-decoration: none;
+  z-index: 1;
+}
+
+body{
+  background-image: url("Fond.jpg");
+}
+
+textarea{
+  width: 600px;
+  height: 300px;
+}
