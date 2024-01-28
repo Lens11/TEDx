@@ -1,0 +1,98 @@
+
+body {
+    /* Ici on utilise le sélecteur body pour appliquer une police et une taille par défaut pour les éléments */
+    font-size: 1em;
+    background-color: gray;
+}
+* {
+margin: 0;
+}
+    /* FOOTER ET HEADER  */
+
+header {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Assurez-vous que l'en-tête reste au-dessus des autres éléments */
+    background-color: black;
+    padding: 20px 50px 20px 50px;
+}
+footer img:hover, header img:hover{
+    opacity: 0.5;
+}
+.menu_header{
+    display: flex;
+    justify-content: flex-end;
+}
+.menu_header a {
+    margin: 0 20px;
+    text-decoration: none;
+}
+.menu_header a:hover{
+    color: #990000;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}    
+/* Ajoutez le style pour la barre de navigation */
+
+/* .w3-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;*/
+    /* Couleur de fond de la barre de navigation */
+
+
+/* Ajoutez le style pour les liens de la barre de navigation */
+.w3-button {
+    color: white;
+    /* Couleur du texte des liens */
+}
+
+.w3-third {
+    width: 33.33%;
+    box-sizing: border-box;
+}
+
+.img-container {
+    width: 100%;
+    height: 200px;
+    /* Ajustez la hauteur souhaitée de votre conteneur */
+    overflow: hidden;
+    /* Cacher le contenu débordant */
+    margin-bottom: 20px;
+    /* Ajoutez une marge en bas pour espacer les articles */
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ajuster l'image pour couvrir tout le conteneur tout en conservant les proportions */
+    object-position: center;
+    /* Centrer l'image dans le conteneur */
+}
+
+.year-2024 {
+    background-color: #f2f2f2;
+    /* Gris clair pour 2024 */
+}
+
+.year-2023 {
+    background-color: #990000;
+    /* Rouge clair pour 2023 */
+}
+
+.rounded-image {
+    border-radius: 50%;
+    width: 100px;
+    /* Ajustez la taille selon vos besoins */
+    height: 100px;
+    /* Ajustez la taille selon vos besoins */
+}
