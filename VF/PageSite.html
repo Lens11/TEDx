@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<body>
+
+<style>
+  /* Ajoutez le style pour la barre de navigation */
+  .w3-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #333; /* Couleur de fond de la barre de navigation */
+    z-index: 1000; /* Assurez-vous que la barre de navigation est au-dessus du contenu */
+  }
+
+
+  /* Ajoutez le style pour les liens de la barre de navigation */
+  .w3-button {
+    color: white; /* Couleur du texte des liens */
+  }
+</style>
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#Accueil" class="w3-button w3-bar-item">Accueil</a>
+  <a href="#Association" class="w3-button w3-bar-item">Association</a>
+  <a href="#Évènement" class="w3-button w3-bar-item">Évènement</a>
+  <a href="#Contact" class="w3-button w3-bar-item">Contact</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="../Photos/General/fd1.jpg" style="width:100%">
+  <img class="mySlides" src="../Photos/General/fd2.jpg" style="width:100%">
+  <img class="mySlides" src="../Photos/General/fd3.jpg" style="width:100%">
+  <img class="mySlides" src="../Photos/General/fd4.jpg" style="width:100%">
+</section>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}
+x[myIndex-1].style.display = "block";
+setTimeout(carousel, 3000);
+}
+</script>
+
+<div id="Accueil">
+<section class="w3-container w3-center" style="max-width:600px">
+  <h2 class="w3-wide">THE CONCEPT</h2>
+  <p class="w3-opacity"><i>Ideas Worth Spreading</i></p>
+</section>
+
+<section class="w3-container w3-content w3-center" style="max-width:600px">
+  <p class="w3-justify">
+    L'association TEDx Mines Alès est ravie de vous présenter le concept captivant des conférences TEDx. Inspiré par les renommées conférences TED (Technology, Entertainment, Design), TEDx offre une plateforme locale et autonome où les esprits créatifs, innovateurs et passionnés peuvent partager leurs idées extraordinaires. En tant qu'événements organisés de manière indépendante, les TEDx permettent à notre communauté de découvrir des perspectives diverses et stimulantes sur des sujets allant de la technologie à la culture en passant par la science et l'éducation. Les intervenants, soigneusement sélectionnés, captivent l'audience avec des discours percutants, chaque intervention étant conçue pour inspirer, informer et susciter la réflexion. Rejoignez-nous pour une expérience enrichissante où des idées qui valent la peine d'être partagées prennent vie.</p>
+</section>
+
+<style>
+  .w3-third {
+    width: 33.33%;
+    box-sizing: border-box;
+  }
+
+  .img-container {
+    width: 100%;
+    height: 200px; /* Ajustez la hauteur souhaitée de votre conteneur */
+    overflow: hidden; /* Cacher le contenu débordant */
+    margin-bottom: 20px; /* Ajoutez une marge en bas pour espacer les articles */
+  }
+
+  .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuster l'image pour couvrir tout le conteneur tout en conservant les proportions */
+    object-position: center; /* Centrer l'image dans le conteneur */
+  }
+</style>
+
+</div>
+
+<style>
+  .year-2024 {
+    background-color: #f2f2f2; /* Gris clair pour 2024 */
+  }
+
+  .year-2023 {
+    background-color: #990000; /* Rouge clair pour 2023 */
+  }
+</style>
+
+<div id="Association">
+  <div class="year-2024">
+  <section class="w3-container w3-center" style="max-width:600px">
+    <h2 class="w3-wide">THE TEAM</h2>
+    <p class="w3-opacity"><i>2024</i></p>
+  </section>
+
+  <section class="w3-container w3-content w3-center" style="max-width:800px">
+    <div class="w3-row-padding">
+      <article class="w3-half">
+        <figure>
+          <div class="img-container">
+            <img class="rounded-image" src="../Photos/2024/Esteban.JPG" alt="Esteban Felden">
+          </div>
+        </figure>
+      </article>
+
+      <article class="w3-half">
+        <div class="w3-container w3-left-align">
+          <h3>Esteban Felden</h3>
+          <p><strong>Président</strong></p>
+          <p>Texte de présentation pour Esteban. Vous pouvez ajouter des détails sur son rôle, ses responsabilités et ses compétences.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="w3-row-padding">
+      <article class="w3-half">
+        <div class="w3-container w3-right-align">
+          <h3>Léna Connesson</h3>
+          <p><strong>Vice-Présidente</strong></p>
+          <p>Texte de présentation pour Léna. Vous pouvez ajouter des détails sur son rôle, ses responsabilités et ses compétences.</p>
+        </div>
+      </article>
+
+      <article class="w3-half">
+        <figure>
+          <div class="img-container">
+            <img class="rounded-image" src="../Photos/2024/Lena.JPG" alt="Léna Connesson">
+          </div>
+        </figure>
+      </article>
+    </div>
+
+    <div class="w3-row-padding">
+      <article class="w3-half">
+        <figure>
+          <div class="img-container">
+            <img class="rounded-image" src="../Photos/2024/Roann.JPG" alt="Roann">
+          </div>
+        </figure>
+      </article>
+
+      <article class="w3-half">
+        <div class="w3-container w3-left-align">
+          <h3>Roann</h3>
+          <p><strong>Trésorier</strong></p>
+          <p>Texte de présentation pour Roann. Vous pouvez ajouter des détails sur son rôle, ses responsabilités et ses compétences.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  </div>
+    <div class="year-2020">
+  <section class="w3-container w3-center" style="max-width:600px">
+    <p class="w3-opacity"><i>2020</i></p>
+  </section>
+  <section class="w3-container w3-content w3-center" style="max-width:800px">
+    <div class="w3-row-padding">
+      <article class="w3-third">
+        <figure>
+          <div class="img-container">
+            <img src="../Photos/2020/Equipe_2020.jpg" alt="Equipe_2020">
+          </div>
+          <figcaption>
+            <h3>Equipe 2020</h3>
+            <p>Les premiers</p>
+          </figcaption>
+        </figure>
+      </article>
+    </div>
+  </section>
+
+</div>
+
+  <div class="year-2021">
+    <section class="w3-container w3-center" style="max-width:600px">
+      <p class="w3-opacity"><i>2021</i></p>
+    </section>
+
+    <section class="w3-container w3-content w3-center" style="max-width:800px">
+      <div class="w3-row-padding">
+        <article class="w3-half">
+          <figure>
+            <div class="img-container">
+              <img class="rounded-image" src="../Photos/2021/Juliet_Drouard.jpg" alt="Juliet Drouard">
+            </div>
+          </figure>
+        </article>
+
+        <article class="w3-half">
+          <div class="w3-container w3-left-align">
+            <h3>Juliet Drouard</h3>
+            <p><strong>Président</strong></p>
+            <p>Texte de présentation pour Esteban. Vous pouvez ajouter des détails sur son rôle, ses responsabilités et ses compétences.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="w3-row-padding">
+        <article class="w3-half">
+          <div class="w3-container w3-right-align">
+            <h3>Mathilde Dol & Rosalie Bouda</h3>
+            <p><strong>Vices-Présidentes</strong></p>
+            <p>Texte de présentation pour Léna. Vous pouvez ajouter des détails sur son rôle, ses responsabilités et ses compétences.</p>
+          </div>
+        </article>
+
+        <article class="w3-half">
+          <figure>
+            <div class="img-container">
+              <img class="rounded-image" src="../Photos/2021/Mathilde_Dol.jpg">
+              <img class="rounded-image" src="../Photos/2021/Rosalie_Bouda.jpg">
+            </div>
+          </figure>
+        </article>
+      </div>
+
+      <div class="w3-row-padding">
+        <article class="w3-half">
+          <figure>
+            <div class="img-container">
+              <img class="rounded-image" src="../Photos/2021/Anissa_Mabed.jpg">
+            </div>
+          </figure>
+        </article>
+
+        <article class="w3-half">
+          <div class="w3-container w3-left-align">
+            <h3>Anissa Mabed </h3>
+            <p><strong>Trésorière</strong></p>
+            <p>Texte de présentation pour Roann. Vous pouvez ajouter des détails sur son rôle, ses responsabilités et ses compétences.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="w3-row-padding">
+        <article class="w3-half">
+          <div class="w3-container w3-left-align">
+            <h3>Coline Michaud</h3>
+            <p><strong>Secrétaire</strong></p>
+            <p>Texte de présentation pour Roann. Vous pouvez ajouter des détails sur son rôle, ses responsabilités et ses compétences.</p>
+          </div>
+        </article>
+        <article class="w3-half">
+          <figure>
+            <div class="img-container">
+              <img class="rounded-image" src="../Photos/2021/Coline_Michaud.jpg">
+            </div>
+          </figure>
+        </article>
+      </div>
+    </section>
+  </div>
+  </div>
+
+
+<style>
+  .rounded-image {
+    border-radius: 50%;
+    width: 100px; /* Ajustez la taille selon vos besoins */
+    height: 100px; /* Ajustez la taille selon vos besoins */
+  }
+</style>
+</div>
+
+<div id="Évènement" class="w3-container">
+  <section class="w3-container w3-center">
+    <h2 class="w3-wide">THE EVENTS</h2>
+    <p class="w3-opacity"><i>2024</i></p>
+  </section>
+  <section class="w3-container w3-center">
+    <p class="w3-opacity"><i>2023</i></p>
+  </section>
+  <section class="w3-container w3-center">
+    <p class="w3-opacity"><i>2022</i></p>
+  </section>
+  <section class="w3-container w3-center">
+    <p class="w3-opacity"><i>2021</i></p>
+  </section>
+
+  <section class="w3-container w3-left-align" style="max-width:800px; margin:auto; background-color: #f5f5f5; padding: 20px;">
+
+    <!-- Affiche et description de l'événement -->
+    <article class="w3-row-padding">
+      <div class="w3-half">
+        <img src="../Photos/2020/AlterNatifs_2020.jpg" alt="AlterNatif_2020" class="w3-image">
+      </div>
+      <div class="w3-half w3-container w3-left-align">
+        <h3>Alter-natifs</h3>
+        <p>On se retrouve le 16 Janvier 2020 à 17h sur Alès pour une soirée placée sous le thème "Alter-natifs".</p>
+        <a href="https://www.youtube.com/watch?fbclid=IwAR0q3PugGSsZqgItyArgjXPqW1N5-hzZBbGW1g8yhIJQV13igxjsUpk6LsY&v=aE_koVZ_jNM&feature=youtu.be" target="_blank">teaser</a>
+        <p>Texte de présentation de l'événement.</p>
+      </div>
+    </article>
+
+    <!-- Speaker 1 -->
+    <article class="w3-row-padding">
+      <div class="w3-half w3-container w3-left-align">
+        <h3>Bruno Clair</h3>
+        <p>Directeur de recherche au CNRS au Laboratoire de Mécanique et Génie Civil (LMGC) de Montpellier en biomécanique de l'arbre et sciences du bois. Son partenaire, Cédric Montero est chercheur au LMGC Montpellier et Maître de Conférences à l'Université de Montpellier et enseignant à l'IUT de Nîmes.</p>
+      </div>
+      <div class="w3-half">
+        <img src="../Photos/2020/Speaker1.jpg" alt="Speaker1_2020" class="w3-image">
+      </div>
+    </article>
+  <section class="w3-container w3-center" style="max-width:800px; margin:auto; background-color: #f5f5f5; padding: 20px;">
+
+    <!-- Affiche et description de l'événement -->
+    <article class="w3-row-padding">
+      <div class="w3-half">
+        <img src="../Photos/2020/AlterNatifs_2020.jpg" alt="AlterNatif_2020" class="w3-image">
+      </div>
+      <div class="w3-half w3-container w3-left-align">
+        <h3>Alter-natifs</h3>
+        <p>On se retrouve le 16 Janvier 2020 à 17h sur Alès pour une soirée placée sous le thème "Alter-natifs".</p>
+        <a href="https://www.youtube.com/watch?fbclid=IwAR0q3PugGSsZqgItyArgjXPqW1N5-hzZBbGW1g8yhIJQV13igxjsUpk6LsY&v=aE_koVZ_jNM&feature=youtu.be" target="_blank">teaser</a>
+        <p>Texte de présentation de l'événement.</p>
+      </div>
+    </article>
+
+    <!-- Speaker 1 -->
+    <article class="w3-row-padding">
+      <div class="w3-half">
+        <img src="../Photos/2020/Speaker1.jpg" alt="Speaker1_2020" class="w3-image">
+      </div>
+      <div class="w3-half w3-container w3-left-align">
+        <h3>Bruno Clair</h3>
+        <p>Directeur de recherche au CNRS au Laboratoire de Mécanique et Génie Civil (LMGC) de Montpellier en biomécanique de l'arbre et sciences du bois. Son partenaire, Cédric Montero est chercheur au LMGC Montpellier et Maître de Conférences à l'Université de Montpellier et enseignant à l'IUT de Nîmes.</p>
+      </div>
+    </article>
+  <section class="w3-container w3-center" style="max-width:800px; margin:auto; background-color: #f5f5f5; padding: 20px;">
+
+    <!-- Affiche et description de l'événement -->
+    <article class="w3-row-padding">
+      <div class="w3-half">
+        <img src="../Photos/2020/AlterNatifs_2020.jpg" alt="AlterNatif_2020" class="w3-image">
+      </div>
+      <div class="w3-half w3-container w3-left-align">
+        <h3>Alter-natifs</h3>
+        <p>On se retrouve le 16 Janvier 2020 à 17h sur Alès pour une soirée placée sous le thème "Alter-natifs".</p>
+        <a href="https://www.youtube.com/watch?fbclid=IwAR0q3PugGSsZqgItyArgjXPqW1N5-hzZBbGW1g8yhIJQV13igxjsUpk6LsY&v=aE_koVZ_jNM&feature=youtu.be" target="_blank">teaser</a>
+        <p>Texte de présentation de l'événement.</p>
+      </div>
+    </article>
+
+    <!-- Speaker 1 -->
+    <article class="w3-row-padding">
+      <div class="w3-half">
+        <img src="../Photos/2020/Speaker1.jpg" alt="Speaker1_2020" class="w3-image">
+      </div>
+      <div class="w3-half w3-container w3-left-align">
+        <h3>Bruno Clair</h3>
+        <p>Directeur de recherche au CNRS au Laboratoire de Mécanique et Génie Civil (LMGC) de Montpellier en biomécanique de l'arbre et sciences du bois. Son partenaire, Cédric Montero est chercheur au LMGC Montpellier et Maître de Conférences à l'Université de Montpellier et enseignant à l'IUT de Nîmes.</p>
+      </div>
+    </article>
+  <section class="w3-container w3-center">
+    <p class="w3-opacity"><i>2020</i></p>
+    <img src="../Photos/2020/AlterNatifs_2020.jpg" alt="AlterNatif_2020" class="w3-image">
+    <p>On se retrouve le 16 Janvier 2020 à 17h sur Alès pour une soirée placée sous le thème "Alter-natifs".</p>
+    <a href="https://www.youtube.com/watch?fbclid=IwAR0q3PugGSsZqgItyArgjXPqW1N5-hzZBbGW1g8yhIJQV13igxjsUpk6LsY&v=aE_koVZ_jNM&feature=youtu.be" target="_blank" class="w3-btn w3-blue">Teaser</a>
+    <p>Nous commençons aujourd’hui par un duo qui nous vient de #Montpellier 📍 !  Le premier membre, Bruno Clair est directeur de recherche au CNRS au Laboratoire de Mécanique et Génie Civil (LMGC) de Montpellier en biomécanique de l'arbre et sciences du bois 🌳. Son partenaire, Cédric Montero est lui aussi chercheur au LMGC Montpellier mais aussi Maître de Conférences à l'Université de Montpellier et enseignant à l'IUT de Nîmes.</p>
+    <img src="../Photos/2020/Speaker1.jpg" alt="Speaker1_2020" class="w3-image">
+    <p>⬅️🏃🏻‍♂️➡️ Aujourd’hui nous vous dévoilons notre deuxième #speaker : Eduardo Blanco 🧔🏻.
+      #Ingénieur de l'environnement diplômé à l'Universidade de São Paulo au Brésil, il a réalisé un échange aux Mines #Alès en 2010 🇧🇷🇫🇷. Quelques années après il s’est spécialisé dans le domaine du développement urbain durable par un master à l'École Nationale des Ponts et Chaussés. Engagé dans la promotion du développement durable, il a créé un cabinet d'études dans le domaine au Brésil, dans lequel il a travaillé pendant 5 ans en tant que chef de projet, notamment sur des projets d'urbanisme et de transport et développement durable pour les collectivités 🏙🌎🌱.
+      En 2019 il a finalement rejoint le #Ceebios pour collaborer en tant que chargé de mission et pour réaliser une thèse en partenariat avec le Muséum National d'Histoire Naturelle sur les projets urbains biomimétiques et régénératifs, avec un accent sur les méthodologies d'analyse des services écosystémiques rendus par ces derniers 🔎🐛.</p>
+    <img src="../Photos/2020/Speaker2.jpg" alt="Speaker2_2020" class="w3-image">
+    <p>⬅️🏃🏻‍♂➡️ Troisième speaker à l'honneur jeudi prochain : Xavier Basset !
+      Xavier Basset est un ingénieur formé aux Mines d’Alès, sorti en 2003 (promotion 151) dans le domaine de l'ingénierie logicielle 💻. Il dirige la #startup #Hoomano qu’il a fondé il y a maintenant 5 ans, entreprise spécialisée dans le développement de l’#intelligence émotionnelle 💭. Depuis #Lyon, Xavier est à la tête d'une équipe dévouée à rendre notre #technologie plus intelligente mais surtout plus empathique : en participant à l’essor de #robots sociaux capables d'interagir de manière intuitive et naturelle, Xavier travaille à instaurer une relation durable de qualité entre l’Homme et la machine 💡.</p>
+    <img src="../Photos/2020/Speaker3.jpg" alt="Speaker3_2020" class="w3-image">
+    <p>⬅️🏃‍♂️➡️ J-6 C'est maintenant le moment de vous présenter notre quatrième #speaker !  🥁
+      Priscille Déborah est une #artiste #peintre professionnelle, connue en #France et à l’étranger (New York, Berlin, Danemark, Cameroun, Suisse, Italie, Belgique…) pour ses expositions, galeries et #œuvres expressionnistes 👩‍🎨🌍. Au travers de ses performances, parfois en “live”, elle cherche à créer de l’énergie et instaure une vitalité riche et sincère entre elle et son public. Priscille a su tisser ce lien fort lors d’interventions notables dans des milieux très différents : festivals, expositions, ou même milieux professionnels (Société générale, Thalès, Stelia Aerospace, ...). Au travers de l’#art mais aussi de sa #biographie écrite "La peine d'être vécue" 📖, elle travaille aussi à démystifier le #handicap par l’art : ayant pu bénéficier de la technologie #TMR, un type d’intervention chirurgicale nouveau, elle est la première française à posséder une prothèse de bras #bionique directement contrôlée par le cerveau 💪🧠.</p>
+    <img src="../Photos/2020/Speaker4.jpg" alt="Speaker4_2020" class="w3-image">
+    <p>⬅️🏃‍♂️➡️ Aujourd'hui nous vous présentons notre #speaker Sylvain Perret.
+      Il est directeur du département "#Environnements & #Sociétés" et directeur scientifique au #CIRAD "Centre de Coopération Internationale en Recherche Agronomique pour le Développement", à #Montpellier 👨‍🔬.
+      Pendant plus de 30 années d'expérience en recherche et enseignement supérieur dans les pays du Sud, il s'est intéressé à la gestion des #ressources #renouvelables, (notamment de l'eau agricole), à l'évaluation de systèmes agricoles et au développement #rural 💧🚜.
+      Il utilise plus récemment les méthodologies de l'analyse du cycle de vie, de l'analyse d'éco-efficience et de l'analyse multicritère de systèmes agricoles ♻️. Il dirige désormais un département de 250 personnes, dont 210 chercheurs, et s'intéresse à l'évaluation de l'impact sociétal de la #recherche pour le #développement, soit comment l'approche est novatrice et explore de nouvelles alternatives.</p>
+    <img src="../Photos/2020/Speaker5.jpg" alt="Speaker5_2020" class="w3-image">
+    <p>⬅️🏃‍♂️➡️  Aujourd’hui nous vous invitons à découvrir notre sixième #speaker : Claude Garcia. Écologue de formation, il s'est spécialisé en #forêts tropicales, mais il y a longtemps qu'il n’a pas mesuré un arbre 🌳. Il travaille aujourd'hui pour le #CIRAD, le Centre International de Recherche  Agronomique pour le Développement, et dirige l'équipe Gestion des Forêts et Développement de l'Ecole Polytechnique Fédérale de Zurich en #Suisse 👥. Ses #recherches visent à comprendre les paysages tropicaux en mutation. Avec ses collègues, il utilise des #jeux pour comprendre la prise de décision et les stratégies des #acteurs 🎰. Autrement dit, il voyage partout dans le monde et fait jouer les gens ✈🌎. Et ça marche ! Il rêve désormais de faire #jouer les négociateurs de la COP. </p>
+    <img src="../Photos/2020/Speaker6.jpg" alt="Speaker6_2020" class="w3-image">
+    <p>⬅️🏃‍♂️➡️ Dernier #speaker à l'honneur : Ronan Bolé 👨‍💼.
+      Diplômé de l’#ENIM puis de la #KEDGE Business School, Ronan est devenu un expert dans les secteurs de l’#industrie, de la #logistique et de la supply chain 👨‍🎓. Il commença sa carrière en rejoignant le groupe #Freudenberg en tant que Project Manager où il restera 6 ans jusqu’à devenir Operations #Manager. Cette expérience sera suivie par son entrée chez l’équipementier automobile #Valéo, d’abord en #France puis en #Chine 🇫🇷🇨🇳.
+      C’est en 2013 qu’il rejoint le géant américain #Amazon devenant d’abord Directeur Général du secteur géographique de #Lille puis, 3 ans après, Président Logistique d’Amazon France. L’une de ses missions concerne le grand projet de #robotisation de l’entreprise 🤖. </p>
+    <img src="../Photos/2020/Speaker7.jpg" alt="Speaker7_2020" class="w3-image">
+  </section>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="https://www.facebook.com/tedximtminesales" target="_blank"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://www.linkedin.com/company/tedximt-mines-alès/" target="_blank"><i class="fa fa-linkedin"></i></a>
+</footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</body>
+</html>
