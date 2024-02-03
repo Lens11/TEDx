@@ -8,37 +8,49 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
     <link rel="stylesheet" href="../CSS VF/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- pour rendre l'affichage responsive -->
-</head>
-
-<body>
+  </head>
+  
+  <body>
     <header>
-        <!-- Navigation -->
-        <nav>
-            <a href="../Accueil.html" class="lien-logo"> <img src="#Photos/General/Logo_TEDx.png"
-                    alt="Logo de TEDxMinesAles"></a>
-            <div class="menu_header">
-                <a href="../Accueil.html">Accueil</a>
-                <a href="../Speaker_2024.html">Speaker 2024</a>
-                <a href="../Association.html">Association</a>
-                <a href="../Editions_precedentes.html">Editions précédentes</a>
-                <a href="../A_propos.html">A propos</a>
-            </div>
+      <!-- Navigation -->
+      <nav>
+          <a href="../Accueil.html" class="lien-logo"> <img src="../Photos/General/Logo_TEDx.png"
+              alt="Logo de TEDxMinesAles"></a>
+          <div class="menu_header">
+            <a href="../Accueil.html">Accueil</a>
+            <a href="../Speaker_2024.html">Speakers 2024</a>
+            <a href="../Association_bureau/Bureau_2024.html">Association</a>
+            <a href="../Editions_precedentes/Edition_2023.html">Editions précédentes</a>
+            <a href="../A_propos.html">A propos</a>
+          </div>
         </nav>
     </header>
 
     <main>
-        <section class="menu_edition">
-            <nav>
-                <ul>
-                    <li><a href="Edition_2019.html">Edition 2019</a></li>
-                    <li><a href="Edition_2020.html">Edition 2020</a></li>
-                    <li><a href="Edition_2023.html">Edition 2023</a></li>
-                    <li><a href="#Edition-2024">Edition 2024</a></li>
-                </ul>
-
-            </nav>
-        </section>
-        <section class="Edition contenu">
+        <div class="menu_editions_precedentes">
+        <div class="timeline-container">
+          <button class="timeline-item" onclick="selectYear('2019')">Edition 2019</button>
+          <button class="timeline-item" onclick="selectYear('2020')">Edition 2020</button>
+          <button class="timeline-item active" onclick="selectYear('2023')">Edition 2023</button>
+          </div>
+        </div>
+    
+        <script>
+          function selectYear(year) {
+            // Remove the 'active' class from all items
+            document.querySelectorAll('.timeline-item').forEach(function(item) {
+                item.classList.remove('active');
+            });
+          
+            // Add 'active' class to the clicked item
+            var activeItem = document.querySelector('.timeline-item[onclick="selectYear(\'' + year + '\')"]');
+                  activeItem.classList.add('active');
+          
+                  // Redirection vers une page spécifique en fonction de l'année
+                  var url = "../Editions_precedentes/Edition_" + year + ".html"; // Vous devez avoir une page nommée 'page2019.html', 'page2020.html', etc.
+                  window.location.href = url; // Redirige vers l'URL
+          }
+          </script>
 
 
 

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="CSS VF/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- pour rendre l'affichage responsive -->
+</head>
+
+<body>
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <a href="accueil.html" class="lien-logo"> <img src="../Photos/General/Logo_TEDx.png"
+                alt="Logo de TEDxMinesAles"></a>
+            <div class="menu_header">
+              <a href="Accueil.html">Accueil</a>
+              <a href="Speaker_2024.html">Speakers 2024</a>
+              <a href="Association_bureau/Bureau_2024.html">Association</a>
+              <a href="Editions_precedentes.html">Editions précédentes</a>
+              <a href="A_propos.html">A propos</a>
+            </div>
+          </nav>
+      </header>
+
+
+    <main>
+
+        <div class="slideshow-container">
+            <div class="slide" style="opacity: 1;"><img src="../Photos/General/fd2.jpg" alt="image 1"></div>
+            <div class="slide"><img src="../Photos/General/fd1.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="../Photos/General/fd3.jpg" alt="Image 3"></div>
+            <div class="slide"><img src="../Photos/General/fd4.jpg" alt="Image 4"></div>
+        </div>
+
+        <div class="section-text">
+            <h1>L'association IDALES</h1> <br>
+                <p>
+                Une équipe d'étudiants de l'école d'ingénieur des Mines d'Alès s’est un jour rassemblée avec l’envie de partager. <br>
+                Partager, c’est donner les clés de la réflexion à des personnes en qui l’on a confiance, en qui se dresse le pouvoir de toucher un à un tout individu ayant bien voulu tendre l’oreille. <br>
+                Partager, c’est offrir une liberté et provoquer la création, sous n’importe quelle forme. <br>
+                </p>
+                <a href="A_propos#formulaire-contact" class="nous-contacter">Nous contacter</a>
+        </div>
+
+
+
+        <div class="timeline-container">
+            <button class="timeline-item" onclick="selectYear('2020')">Edition 2020</button>
+            <button class="timeline-item active" onclick="selectYear('2021')">Edition 2021</button>
+            <button class="timeline-item" onclick="selectYear('2022')">Edition 2022</button>
+            <button class="timeline-item" onclick="selectYear('2023')">Edition 2023</button>
+            <button class="timeline-item" onclick="selectYear('2024')">Edition 2024</button>
+        </div>
+
+<script>
+function selectYear(year) {
+  // Remove the 'active' class from all items
+  document.querySelectorAll('.timeline-item').forEach(function(item) {
+      item.classList.remove('active');
+  });
+
+  // Add 'active' class to the clicked item
+  var activeItem = document.querySelector('.timeline-item[onclick="selectYear(\'' + year + '\')"]');
+        activeItem.classList.add('active');
+
+        // Redirection vers une page spécifique en fonction de l'année
+        var url = "../Association_bureau/Bureau_" + year + ".html"; // Vous devez avoir une page nommée 'page2019.html', 'page2020.html', etc.
+        window.location.href = url; // Redirige vers l'URL
+}
+</script>
+
+
+    <div class="team-section">
+      <h1>Bureau 2020 -2021</h1>
+        <div class="team-row">
+            <div class="team-member">
+                <img src="../Photos/2021/Anissa_Mabed.jpg" alt="Anissa Mabed">
+                <p>Anissa Mabed<br>Poste</p>
+            </div>
+            <div class="team-member">
+                <img src="../Photos/2021/Coline_Michaud.jpg" alt="Coline Michaud">
+                <p>Coline Michaud<br>Poste</p>
+            </div>
+            <div class="team-member">
+                <img src="../Photos/2021/Juliet_Drouard.jpg" alt="Juliet Drouard">
+                <p>Juliet Drouard<br>Poste</p>
+            </div>
+        </div>
+        <div class="team-row">
+            <div class="team-member">
+                <img src="../Photos/2021/Mathilde_Dol.jpg" alt="Mathilde Dol">
+                <p>Mathilde Dol<br>Poste</p>
+            </div>
+            <div class="team-member">
+                <img src="../Photos/2021/Rosalie_Bouda.jpg" alt="Rosalie Bouda">
+                <p>Rosalie Bouda<br>Poste</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showNextSlide() {
+            slides[currentSlide].style.opacity = 0;
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].style.opacity = 1;
+        }
+
+        setInterval(showNextSlide, 4000); // Change slide every 3 seconds
+    </script>
+
+
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+        <a href="https://www.facebook.com/tedximtminesales" target="_blank"><i class="fa fa-facebook-official"></i></a>
+        <a href="https://www.linkedin.com/company/tedximt-mines-alès/" target="_blank"><i
+                class="fa fa-linkedin"></i></a>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</body>
+
+</html>

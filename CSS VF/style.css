@@ -1,6 +1,6 @@
-body {
+body{
     /* Ici on utilise le sélecteur body pour appliquer une police et une taille par défaut pour les éléments */
-    font-size: 1em;
+    font-size: 1.2em;
     background-color: #121212;
     font-family: 'Arial', sans-serif;
     color: #333;
@@ -132,9 +132,12 @@ header nav {
     font-size: 2em; /* Taille du titre */
     margin-bottom: 0.5em;
 }
+.menu_editions_precedentes{
+    margin-top: 100px;
+}
 
 .profile .tags {
-    background-color: #9c0909;
+    background-color: #990000;
     color: white;
     font-size: 0.8em;
     display: inline-block;
@@ -158,7 +161,7 @@ header nav {
 
 .slideshow-container {
     width: 100%;
-    height: 500px;
+    height: 450px;
     position: relative;
     overflow: hidden;
 }
@@ -184,6 +187,19 @@ header nav {
     color: white;
 }
 
+.nous-contacter{
+    background: #990000;
+    font-size: 1.1em;
+    color: white;
+    border-radius: 50px;
+    padding: 20px 30px;
+    display: inline-block; /* On le définit block, ce qui permet d'appliquer padding et margin mais aussi en inline pour le laisser à la suite*/
+    margin-top: 30px; /* Espace au-dessus du bouton */
+
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
 .timeline-bar {
     width: 75%;
     margin: 20px auto;
@@ -195,8 +211,6 @@ header nav {
     text-decoration: none;
     color: white;
 }
-
-
 
 
 .timeline-container {
@@ -229,18 +243,19 @@ header nav {
 }
 
 .timeline-item.active {
-    border-bottom: 3px solid #e74c3c; /* Active item border */
+    border-bottom: 3px solid #990000; /* Active item border */
 }
 
 /* The red underline */
 .timeline-highlight {
     height: 3px;
     width: 100%;
-    background-color: #e74c3c;
+    background-color: #990000;
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: -1;
+    margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 25px 25px 0 0;
     transition: width 0.4s ease-in-out;
@@ -250,6 +265,7 @@ header nav {
 .team-section {
     text-align: center;
     margin-top: 40px;
+    color: white;
 }
 
 .team-member {
