@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-    <link rel="stylesheet" href="CSS VF/style.css">
+    <link rel="stylesheet" href="../CSS VF/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- pour rendre l'affichage responsive -->
 </head>
 
@@ -30,72 +30,54 @@
 
       <div class="slideshow-container">
         <div class="slide" style="opacity: 1;"><img src="image1.jpg" alt="Photos/General/fd2.jpg"></div>
-        <div class="slide"><img src="Photos/General/fd1.jpg" alt="Image 2"></div>
-        <div class="slide"><img src="Photos/General/fd3.jpg" alt="Image 3"></div>
-        <div class="slide"><img src="Photos/General/fd4.jpg" alt="Image 4"></div>
+        <div class="slide"><img src="../Photos/General/fd1.jpg" alt="Image 2"></div>
+        <div class="slide"><img src="../Photos/General/fd3.jpg" alt="Image 3"></div>
+        <div class="slide"><img src="../Photos/General/fd4.jpg" alt="Image 4"></div>
     </div>
 
     <div class="section-text">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
     </div>
 
+    <div class="timeline-container">
+        <button class="timeline-item active" onclick="selectYear('2024')">Edition 2024</button>
+        <button class="timeline-item" onclick="selectYear('2023')">Edition 2023</button>
+        <button class="timeline-item" onclick="selectYear('2022')">Edition 2022</button>
+        <button class="timeline-item" onclick="selectYear('2021')">Edition 2021</button>
+        <button class="timeline-item" onclick="selectYear('2020')">Edition 2020</button>
+        <button class="timeline-item" onclick="selectYear('2019')">Edition 2019</button>
+        <div class="timeline-highlight"></div>
+        </div>
 
 
-<div class="timeline-container">
-<button class="timeline-item active" onclick="selectYear('2024')">Edition 2024</button>
-<button class="timeline-item" onclick="selectYear('2023')">Edition 2023</button>
-<button class="timeline-item" onclick="selectYear('2022')">Edition 2022</button>
-<button class="timeline-item" onclick="selectYear('2021')">Edition 2021</button>
-<button class="timeline-item" onclick="selectYear('2020')">Edition 2020</button>
-<button class="timeline-item" onclick="selectYear('2019')">Edition 2019</button>
-<div class="timeline-highlight"></div>
-</div>
-
-<script>
-function selectYear(year) {
-  // Remove the 'active' class from all items
-  document.querySelectorAll('.timeline-item').forEach(function(item) {
-      item.classList.remove('active');
-  });
-
-  // Add 'active' class to the clicked item
-  var activeItem = document.querySelector('.timeline-item[onclick="selectYear(\'' + year + '\')"]');
-        activeItem.classList.add('active');
-
-        // Redirection vers une page spécifique en fonction de l'année
-        var url = "Association_bureau/Bureau_" + year + ".html"; // Vous devez avoir une page nommée 'page2019.html', 'page2020.html', etc.
-        window.location.href = url; // Redirige vers l'URL
-}
-</script>
-
-  <h2>Bureau 2020</h2>
+    <title>Bureau 2024</title>
 
     <div class="team-section">
         <div class="team-row">
             <div class="team-member">
-                <img src="Photos/2021/Anissa_Mabed.jpg" alt="Nom Membre">
+                <img src="../Photos/2024/Esteban.JPG" alt="Esteban Felden">
                 <p>Nom Membre<br>Poste</p>
             </div>
             <div class="team-member">
-                <img src="Photos/2021/Coline_Michaud.jpg" alt="Nom Membre">
+                <img src="../Photos/2024/Lena.JPG" alt="Esteban Felden">
                 <p>Nom Membre<br>Poste</p>
             </div>
             <div class="team-member">
-                <img src="Photos/2021/Juliet_Drouard.jpg" alt="Nom Membre">
+                <img src="../Photos/2024/Roann.JPG" alt="Esteban Felden">
                 <p>Nom Membre<br>Poste</p>
             </div>
         </div>
         <div class="team-row">
             <div class="team-member">
-                <img src="Photos/2021/Mathilde_Dol.jpg" alt="Nom Membre">
+                <img src="../Photos/General/default-profile.jpg" alt="Nom Membre">
                 <p>Nom Membre<br>Poste</p>
             </div>
             <div class="team-member">
-                <img src="Photos/General/default-profile.jpg" alt="Nom Membre">
+                <img src="../Photos/General/default-profile.jpg" alt="Nom Membre">
                 <p>Nom Membre<br>Poste</p>
             </div>
             <div class="team-member">
-                <img src="Photos/2021/Rosalie_Bouda.jpg" alt="Nom Membre">
+                <img src="../Photos/General/default-profile.jpg" alt="Nom Membre">
                 <p>Nom Membre<br>Poste</p>
             </div>
         </div>
@@ -112,7 +94,7 @@ function selectYear(year) {
             slides[currentSlide].style.opacity = 1;
         }
 
-        setInterval(showNextSlide, 4000); // Change slide every 3 seconds
+        setInterval(showNextSlide, 4000); // Change slide every 4 seconds
     </script>
 
 
