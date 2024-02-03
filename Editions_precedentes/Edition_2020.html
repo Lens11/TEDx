@@ -30,9 +30,10 @@
   <main>
     <div class="menu_editions_precedentes">
     <div class="timeline-container">
-      <button class="timeline-item" onclick="selectYear('2019')">Edition 2019</button>
-      <button class="timeline-item" onclick="selectYear('2020')">Edition 2020</button>
-      <button class="timeline-item active" onclick="selectYear('2023')">Edition 2023</button>
+      <button class="timeline-item active" onclick="selectYear('2020')">Edition 2020</button>
+      <button class="timeline-item" onclick="selectYear('2021')">Edition 2021</button>
+      <button class="timeline-item" onclick="selectYear('2022')">Edition 2022</button>
+      <button class="timeline-item" onclick="selectYear('2023')">Edition 2023</button>
       </div>
     </div>
 
@@ -48,7 +49,7 @@
               activeItem.classList.add('active');
       
               // Redirection vers une page spécifique en fonction de l'année
-              var url = "Editions_precedentes/Edition_" + year + ".html"; // Vous devez avoir une page nommée 'page2019.html', 'page2020.html', etc.
+              var url = "../Editions_precedentes/Edition_" + year + ".html"; // Vous devez avoir une page nommée 'page2019.html', 'page2020.html', etc.
               window.location.href = url; // Redirige vers l'URL
       }
       </script>
