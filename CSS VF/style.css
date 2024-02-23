@@ -107,6 +107,9 @@ header nav {
     max-width: 30%; /* Maximum 30% de la largeur du conteneur */
     color: white;
 }
+.menu_editions_precedentes{
+    margin-top: 100px;
+}
 
 .profile{
     display: flex;
@@ -132,9 +135,6 @@ header nav {
     font-size: 2em; /* Taille du titre */
     margin-bottom: 0.5em;
 }
-.menu_editions_precedentes{
-    margin-top: 100px;
-}
 
 .profile .tags {
     background-color: #990000;
@@ -144,6 +144,12 @@ header nav {
     padding: 6px 7px;
     margin-bottom: 20px;
     border-radius: 10px; /* Bords arrondis pour les tags */
+    text-decoration: none; /* Remove underline from links */
+}
+.profile .tags-youtube img {
+    width: 40px; /* Adjust the size to match the tags */
+    height: 40px;
+    margin: 0; /* Remove margin for alignment */
 }
 .profile img {
     margin: 0;
