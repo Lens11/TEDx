@@ -29,42 +29,28 @@
 
     <main>
 
-      <h1>FAQ</h1>
-
-	<p>On discute ? Vous avez des questions ? On a les réponses !</p>
-
-	<form action="mailto:example@example.com" method="post" enctype="text/plain">
-
-		<label for="name">Qui êtes-vous ?</label><br>
-
-		<input type="text" id="name" name="name"><br>
-
-		<label for="message">Message</label><br>
-
-		<textarea id="message" name="message"></textarea><br>
-
-		<input type="submit" value="Envoyer">
-
-	</form>
-
-	<h2>Vous nous contactez pour:</h2>
-
-	<ul>
-
-		<li>Devenir bénévole</li>
-
-		<li>E-mail</li>
-
-		<li>Qui êtes-vous ?</li>
-
-		<li>Message</li>
-
-	</ul>
-
-
-
-
-
+      <section id="contact-form" class="contact-form">
+        <div class="contact-text">
+        <h1>N'hesitez plus !</h1>
+          <h2>Contactez nous</h2> 
+          <p>Vous avez des questions ? On a les réponses !</p>
+        </div>
+          <form action="/submit_form" method="post">
+              <label for="purpose">Ecrivez-nous :</label>
+              <select name="purpose" id="purpose">
+                <option value="volunteer">Questions sur l'évènement</option>
+                  <option value="volunteer">Devenir bénévole</option>
+                <option value="volunteer">Devenir speaker</option>
+                <option value="volunteer">Autre</option>
+              </select>
+            
+              <input type="email" name="email" placeholder="E-mail" required>
+              <input type="text" name="name" placeholder="Qui êtes-vous ?" required>
+              <textarea name="message" placeholder="Message" required rows="6"></textarea>
+              <button type="submit">Envoyer</button>
+              
+          </form>
+      </section>
 
     </main>
 
