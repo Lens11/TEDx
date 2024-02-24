@@ -57,7 +57,7 @@ header nav {
     justify-content: space-between;
 }
 
-.footer {
+footer {
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
     background-color: black;
     color: #ddd;
@@ -118,7 +118,7 @@ header nav {
     text-decoration: none;
 }
 
-em {
+footer em {
     color: #990000;
     text-decoration: none;
     font-style: normal;
@@ -126,8 +126,8 @@ em {
 
 .footer-text {
     border-top: 1px solid #555;
-    padding-top: 10px;
-    margin-top: 20px;
+    padding-top: 20px;
+    margin-top: 50px;
     line-height: 1.5;
     text-align: center;
     color: #555;
@@ -432,7 +432,7 @@ em {
     padding: 40px;
     /* Espace autour du contenu */
     gap: 100px;
-    background-color: #000000;
+    background-color: #121212;
     color: #FFFFFF;
 }
 
