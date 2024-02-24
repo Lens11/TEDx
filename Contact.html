@@ -2,20 +2,19 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-    <link rel="stylesheet" href="CSS VF/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- pour rendre l'affichage responsive -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="CSS VF/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- pour rendre l'affichage responsive -->
 </head>
 
 <body>
   <header>
     <!-- Navigation -->
     <nav>
-      <a href="accueil.html" class="lien-logo"> <img src="Photos/General/Logo_TEDx.png"
-          alt="Logo de TEDxMinesAles"></a>
+      <a href="accueil.html"> <img src="Photos/General/Logo_TEDx.png" alt="Logo de TEDxMinesAles"></a>
       <div class="menu_header">
         <a href="Accueil.html">Accueil</a>
         <a href="Association_bureau/Bureau_2024.html">Association</a>
@@ -27,41 +26,77 @@
   </header>
 
 
-    <main>
+  <main>
 
-      <section id="contact-form" class="contact-form">
-        <div class="contact-text">
+    <section id="contact-form" class="contact-form">
+      <div class="contact-text">
         <h1>N'hesitez plus !</h1>
-          <h2>Contactez nous</h2> 
-          <p>Vous avez des questions ? On a les réponses !</p>
-        </div>
-          <form action="/submit_form" method="post">
-              <label for="purpose">Ecrivez-nous :</label>
-              <select name="purpose" id="purpose">
-                <option value="volunteer">Questions sur l'évènement</option>
-                  <option value="volunteer">Devenir bénévole</option>
-                <option value="volunteer">Devenir speaker</option>
-                <option value="volunteer">Autre</option>
-              </select>
-            
-              <input type="email" name="email" placeholder="E-mail" required>
-              <input type="text" name="name" placeholder="Qui êtes-vous ?" required>
-              <textarea name="message" placeholder="Message" required rows="6"></textarea>
-              <button type="submit">Envoyer</button>
-              
-          </form>
-      </section>
+        <h2>Contactez nous</h2>
+        <p>Vous avez des questions ? On a les réponses !</p>
+      </div>
+      <form action="/submit_form" method="post">
+        <label for="purpose">Ecrivez-nous :</label>
+        <select name="purpose" id="purpose">
+          <option value="volunteer">Questions sur l'évènement</option>
+          <option value="volunteer">Devenir bénévole</option>
+          <option value="volunteer">Devenir speaker</option>
+          <option value="volunteer">Autre</option>
+        </select>
 
-    </main>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <input type="text" name="name" placeholder="Qui êtes-vous ?" required>
+        <textarea name="message" placeholder="Message" required rows="6"></textarea>
+        <button type="submit">Envoyer</button>
 
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
-        <a href="https://www.facebook.com/tedximtminesales" target="_blank"><i class="fa fa-facebook-official"></i></a>
-        <a href="https://www.linkedin.com/company/tedximt-mines-alès/" target="_blank"><i
-                class="fa fa-linkedin"></i></a>
-    </footer>
+      </form>
+    </section>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <img src="Photos/General/Logo_TEDx.png" alt="Logo" class="logo">
+      </div>
+
+      <div class="footer-section">
+        <ul class="footer-links">
+          <!-- Plus de liens ici -->
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">L'association</a></li>
+          <li><a href="#">Les éditions précédentes</a></li>
+          <li><a href="#">A propos de TEDx</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <ul class="footer-links">
+          <!-- Plus de liens ici -->
+          <li><a href="#"><em>Billeterie 2024</em></a></li>
+          <li><a href="#">Nous contacter</a></li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <ul class="social-network">
+          <li><a href="#"><img src="Photos/General/Icone_SN/facebook.png" alt="Facebook"></a></li>
+          <li><a href="#"><img src="Photos/General/Icone_SN/instagram.png" alt="Instagram"></a></li>
+          <li><a href="#"><img src="Photos/General/Icone_SN/linkedin.png" alt="LinkedIn"></a></li>
+          <li><a href="#"><img src="Photos/General/Icone_SN/gmail.png" alt="Facebook"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-text">
+      <p>TEDxMinesAlès © 2024, tous droits réservés. Cet événement TEDx indépendant est exploité sous licence de TED.
+        Site internet réalisé par TEDxMinesAlès</p>
+    </div>
+  </footer>
+
 
 </body>
 
