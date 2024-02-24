@@ -3,12 +3,13 @@ body {
     font-size: 1.2em;
     background-color: #121212;
     font-family: 'Arial', sans-serif;
-    color: #333;
+    /* color: #333; */
+    color:white;
     margin: 0;
     padding: 0;
 }
 
-* {
+*, h1 {
     margin: 0;
 }
 
@@ -24,7 +25,7 @@ header {
     /* Assurez-vous que l'en-tête reste au-dessus des autres éléments */
     background-color: black;
     padding: 20px 50px 20px 50px;
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 1.5);
 
 }
 
@@ -58,10 +59,10 @@ header nav {
 }
 
 footer {
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 1.5);
     background-color: black;
     color: #ddd;
-    padding: 30px 0;
+    padding: 30px 50px 20px 50px;
     font-family: 'Arial', sans-serif;
     font-size: 16px;
 }
@@ -70,9 +71,9 @@ footer {
 }
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
-    padding: 0 10%;
+
 }
 
 .footer-section {
@@ -84,11 +85,12 @@ footer {
     list-style: none;
     padding: 0;
     display: flex;
-    margin-bottom: 10px;
+    width: 250px;
+    justify-content: space-between;
 }
 
 .social-network li {
-    margin-right: 15px;
+    
     padding:2px 8px;
     border-radius: 50%;
     background-color:#555555;
@@ -98,7 +100,7 @@ footer {
 }
 
 .social-network li a {
-    color: #ddd;
+    color: white;
     text-decoration: none;
     font-size: 24px;
     display: inline-block;
@@ -114,7 +116,7 @@ footer {
 }
 
 .footer-links li a {
-    color: #ddd;
+    color: white;
     text-decoration: none;
 }
 
@@ -126,8 +128,8 @@ footer em {
 
 .footer-text {
     border-top: 1px solid #555;
-    padding-top: 20px;
-    margin-top: 50px;
+    padding-top: 10px;
+    margin-top: 25px;
     line-height: 1.5;
     text-align: center;
     color: #555;
@@ -411,8 +413,8 @@ footer em {
 }
 
 .team-member img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
 
@@ -499,15 +501,28 @@ footer em {
 }
 
 
+/* A propos */
 
-.w3-button {
-    color: white;
-    /* Couleur du texte des liens */
+.A-propos-TED{
+    background-color:black;
+    display: flex;
+    margin-top: 80px;
+    padding: 50px;
+    
+}
+.TED-texte{
+
 }
 
-.w3-third {
-    width: 33.33%;
-    box-sizing: border-box;
+.A-propos-TEDx{
+    display: flex;
+    padding: 50px;
+    
+}
+.A-propos-TEDxMinesAles{
+    background-color:black;
+    display: flex;
+    padding: 50px;
 }
 
 .img-container {
