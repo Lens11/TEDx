@@ -281,7 +281,7 @@ footer em {
     overflow: hidden;
     width: 65%;
     /* La largeur de l'image est la moitié de celle du profil */
-    max-width: 1200px;
+    max-width: 1000px;
     /* Largeur maximale de l'image */
 }
 
@@ -508,12 +508,30 @@ footer em {
     display: flex;
     margin-top: 80px;
     padding: 50px;
-    
+    align-items: center;
+    justify-self: center;
+    gap: 100px;
 }
 .TED-texte{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    overflow: hidden;
+    max-width: 50%;
+
 
 }
 
+.TED-image{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    overflow:auto;
+    width: 50%;
+    /* La largeur de l'image est la moitié de celle du profil */
+    max-width: 600px;
+}
 .A-propos-TEDx{
     display: flex;
     padding: 50px;
